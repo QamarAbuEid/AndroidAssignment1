@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/hi_children"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:hint="Enter_Your_Name"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/HiText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Hi"
+            android:onClick="openMain4"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Fruits"
+            android:onClick="openMain2"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/vegetables"
+            android:onClick="openMain3"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/color"
+            android:onClick="openMain4"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/Hi"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/micky" />
+
+</FrameLayout>
